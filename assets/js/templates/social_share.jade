@@ -1,0 +1,15 @@
+.close.dark &times;
+.headline Get Feedback!
+ul.social-share
+  li.facebook
+    a.mt-facebook.mt-share-inline-square-bw-sm(href='https://www.facebook.com/sharer/sharer.php?u='+encoded)
+      img(src='http://mojotech-static.s3.amazonaws.com/facebook@2x.png')
+  li.twitter
+    a.mt-twitter.mt-share-inline-square-bw-sm(href='http://twitter.com/intent/tweet?text=Help%20me%20edit%20my%20work%20on%20edit.sx&url='+encoded)
+      img(src='http://mojotech-static.s3.amazonaws.com/twitter@2x.png')
+  li.google-plus
+    a.mt-google.mt-share-inline-square-bw-sm(href='https://plus.google.com/share?url='+encoded)
+      img(src='http://mojotech-static.s3.amazonaws.com/google@2x.png')
+  li.link
+    .icon
+    input(readonly, spellcheck="false", value=url, onClick="this.select()").link-box

@@ -1,0 +1,88 @@
+html
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='Group Photo Editing')
+    link(href='/css/marketing.css', rel='stylesheet', type='text/css')
+    link(href='/css/standardize.css', rel='stylesheet', type='text/css')
+    link(href='/css/index-grid.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400', rel='stylesheet', type='text/css')
+    script(src="https://www.youtube.com/iframe_api", type="text/javascript")
+
+    title= title
+    - if (process.env['ROOTS_ENV'] && process.env['ROOTS_ENV'].toUpperCase() == "PRODUCTION")
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100642-29', 'edit.sx');
+        ga('send', 'pageview');
+
+    script.
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '499px',
+          videoId: 'pVNT-voSccE',
+          origin: window.location.origin,
+          rel: 0,
+          modestbranding: 1,
+          controls: 0,
+          showinfo: 0
+        });
+      }
+
+  body.body.index.clearfix
+    header._container._container-1.clearfix
+      div.container.sign-in.clearfix
+        a._button(href='/login') Sign In
+      div.article-titles.clearfix
+        img.edit-logo(src='imgs/logo3-145x143.png', data-rimage, data-src='imgs/logo3-145x143.png')
+        h1.title Collaborate in realtime, online. &nbsp;Experience editing as it should be.
+        div.sign-up-top.clearfix
+          form
+            label(for="email") Email Address:
+            input._input(placeholder='email@address.com', type="email", value="", name="EMAIL", id="mce-EMAIL")
+            input._button#mc-embedded-subscribe(type="submit", value="Sign up")
+      div.video
+        div.container.clearfix
+          div.button-video.clearfix
+            button._button(onclick="$('.video-player').css({'z-index': 40, display: 'block'}); player.playVideo();") &nbsp; &nbsp; &nbsp; &nbsp;Watch Demo
+            img.play-icon(src='imgs/play-w-30x30.png', data-rimage, data-src='imgs/play-w-30x30.png')
+          img.video-still(src='imgs/edit-browser-w-800x499.png', data-rimage, data-src='imgs/edit-browser-w-800x499.png')
+          #player.video-player(frameborder="0", allowfullscreen)
+    section.feature-container.feature-area.clearfix
+      p.feature-title As simple as drag, drop, and link.
+      div.features.clearfix
+        div.feature.create.clearfix
+          img.feature-icon(src='imgs/feature1-70x60.png', data-rimage, data-src='imgs/feature1-70x60.png')
+          div.feature-subhead Create your edit
+          div.feature-body It only takes a few clicks. Simply drag &amp; drop to add or reorder your images.
+        img.next.next-1(src='imgs/next-30x30.png', data-rimage, data-src='imgs/next-30x30.png')
+        div.feature.share.clearfix
+          img.feature-icon(src='imgs/feature2-70x60.png', data-rimage, data-src='imgs/feature2-70x60.png')
+          div.feature-subhead Share with a community
+          div.feature-body Post a link or share with social media. Others can interact with it in realtime.
+        img.next.next-2(src='imgs/next-30x30.png', data-rimage, data-src='imgs/next-30x30.png')
+        div.feature.feedback.clearfix
+          img.feature-icon(src='imgs/feature3-70x60.png', data-rimage, data-src='imgs/feature3-70x60.png')
+          div.feature-subhead Get solid feedback
+          div.feature-body Make choices based on reviews. Feedback includes comments, ratings, order, and deletions.
+
+    footer._container._container-2
+      h2.footer Sign up for the Beta, it's free.
+      div.sign-up.clearfix
+        form
+          label(for="email") Email Address:
+          input._input(placeholder='email@address.com', type="email", value="", name="EMAIL", id="mce-EMAIL")
+          input._button.mc-embedded-subscribe(type="submit", value="Register", name="Sign up")
+
+    script(src="js/jquery-min.js")
+    script(src="js/rimages.js")
+    script.
+      $('form').on("submit", function(e) {
+        e.preventDefault()
+        window.location = "/signup?email="+$('input')[0].value;
+        return false;
+      })

@@ -1,0 +1,58 @@
+figure
+  position: absolute
+  margin: auto
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 3em
+  height: 3em
+  animation: rotate 1.4s linear infinite
+
+.dotwrap
+  width:1.2em
+  height:3em
+  position: absolute
+  left:50%
+  margin-left:-0.6em
+  top:50%
+  margin-top:-1.4em
+
+.dotwrap1
+  transform: rotate(0deg)
+.dotwrap2
+  transform: rotate(72deg)
+.dotwrap3
+  transform: rotate(144deg)
+.dotwrap4
+  transform: rotate(216deg)
+.dotwrap5
+  transform: rotate(288deg)
+
+.load-dot
+  width: 0.5em
+  height: 0.5em
+  border-radius: 100%
+  transition: all 500ms ease
+.dotwrap
+  animation: smallbig 2.4s linear infinite
+  for num in (0..4)
+    .dot{num+1}
+      background: $ratings[num]; animation: dots 2.4s linear infinite;
+
+@keyframes rotate
+  0%
+    transform: rotate( 0 )
+  100%
+    transform: rotate(360deg)
+
+@keyframes smallbig
+  50%
+    height:1.2em
+    margin-top:-0.6em
+
+@keyframes dots
+  50%
+    opacity: .1
+  100%
+    opacity: .9

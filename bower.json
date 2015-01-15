@@ -1,0 +1,14 @@
+{
+  "name": "edit-client",
+  "dependencies": {
+    "backbone.marionette": "^2.1.0",
+    "backbone": "~1.1.2",
+    "lodash": "~2.4.1",
+    "jquery": "~2.1.0",
+    "moment": "~2.6.0",
+    "bluebird": "~1.2.3",
+    "backbone.routefilter": "git://github.com/boazsender/backbone.routefilter.git#~0.2.0",
+    "jquery-ui-touch-punch": "furf/jquery-ui-touch-punch",
+    "backbone.syphon": "~0.4.1"
+  }
+}

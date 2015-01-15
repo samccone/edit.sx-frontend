@@ -1,0 +1,101 @@
+@import "_loading"
+@import "_color_rating"
+
+.tiny-zoom .single-image .ratings
+  display: none
+
+.ratings
+  position: absolute
+  bottom: 4px
+  left: 5%
+  width: 95%
+  text-align: left
+  transition: all 200ms
+  // prevents opacity jiggle
+  backface-visibility: hidden
+
+.star
+  width: 22px
+  height: 16px
+  border-radius: 50%
+  opacity: 0.4
+  display: inline-block
+  cursor: pointer
+  transition: background-color 200ms
+  background-image: url("/imgs/star.svg")
+  background-size: contain
+  background-repeat: no-repeat
+  &.fill
+    background-image: url("/imgs/star_active.svg")
+
+.light
+  .star
+    background-image: url("/imgs/star_light.svg")
+    &.fill
+      background-image: url("/imgs/star_light_active.svg")
+
+.tiny-zoom
+  .has-comments
+    display: none
+  .color-hold
+    display: none
+
+.has-comments
+  height: 16px
+  width: 16px
+  background-image: url("/imgs/comment2.svg")
+  background-size: contain
+  background-repeat: no-repeat
+  position: absolute
+  bottom: 4px
+  right: 14%
+  cursor: pointer
+  opacity: 0.6
+
+.tiny-zoom .single-image .image
+  height: 95%
+  margin: 2.5% 5%
+
+.single-image
+  display: inline-block
+  position: relative
+  width: 273px
+  height: 220px
+  background: $grey
+  border-radius: 5px
+  margin: $spacer*2 $spacer
+  border: solid 1px #E2E2E2
+
+  hoverable()
+
+  &.active
+    border: solid 1px $orange
+
+  &.deleted
+    opacity: 0.5
+
+  .color-hold
+    position: absolute
+    right: 5%
+    width: 15px
+    height: 15px
+    bottom: 6px
+    z-index: 1
+
+  .image
+    top: 0
+    left: 0
+    width: 90%
+    height: 80%
+    margin: 3% 5%
+    position: absolute
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+    cursor: move
+
+    &.loading
+      opacity: 0.4
+
+.public-view .single-image .image
+  cursor: auto

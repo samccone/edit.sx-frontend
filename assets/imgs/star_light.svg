@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled 3</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="star_light" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" fill="#FFFFFF">
+            <path d="M26.131,9.859 C25.863,9.033 25.096,8.477 24.229,8.477 L24.213,8.477 L17.063,8.533 L14.91,1.717 C14.646,0.886 13.875,0.321 13.004,0.321 C12.133,0.321 11.359,0.886 11.098,1.717 L8.941,8.533 L1.791,8.477 L1.773,8.477 C0.905,8.477 0.137,9.033 -0.131,9.859 C-0.401,10.69 -0.102,11.596 0.609,12.105 L6.424,16.263 L4.164,23.045 C3.888,23.873 4.181,24.784 4.887,25.295 C5.238,25.551 5.65,25.679 6.062,25.679 C6.48,25.679 6.896,25.547 7.251,25.287 L13.002,21.04 L18.753,25.287 C19.107,25.547 19.524,25.679 19.941,25.679 C20.353,25.679 20.767,25.551 21.119,25.295 C21.823,24.782 22.116,23.871 21.84,23.045 L19.577,16.263 L25.392,12.105 C26.104,11.598 26.4,10.69 26.131,9.859 L26.131,9.859 Z M17.212,15.496 L19.941,23.68 L13.001,18.555 L6.06,23.68 L8.789,15.496 L1.77,10.479 L10.397,10.544 L13,2.32 L15.604,10.545 L24.231,10.48 L17.212,15.496 L17.212,15.496 Z" id="star3-lat" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

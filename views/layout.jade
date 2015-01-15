@@ -1,0 +1,40 @@
+!!!
+html
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='Group Photo Editing')
+
+    title= title
+    link(rel='stylesheet', href='/css/master.css')
+    script(src='/js/vendor/parse.1.2.13.js')
+    script.
+      Parse.initialize("#{parseAppID}", "#{parseJSKey}");
+    - if (process.env['ROOTS_ENV'] && process.env['ROOTS_ENV'].toUpperCase() == "PRODUCTION")
+      script(src="http://cdn.ravenjs.com/1.1.15/jquery,native/raven.min.js")
+      script.
+        Raven.config("https://#{RAVEN_ID}@app.getsentry.com/26759", {}).install();
+      script.
+        window.FirehoseEndpoint = '//edit.sx:7474'
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100642-29', 'edit.sx');
+        ga('send', 'pageview');
+    - else
+      script.
+        window.FirehoseEndpoint = '//localhost:7474'
+
+    script(src='/js/templates.js')
+    script(src='/js/vendor.js')
+    script(src='/js/main.js')
+  body
+    .messages
+    .overlay
+    #app
+      block content
+
+    script(src="/js/vendor/help.js")

@@ -1,0 +1,14 @@
+.content
+  img.edit-logo(src='imgs/logo3-145x143.png', v-href="")
+  form.signup
+    br/
+    input(name="username", placeholder="email", type="email", required, value="#{email}")
+    br/
+    input(name="password", type="password", placeholder="password", required)
+    br/
+    input(name="password_again", type="password", placeholder="password again", required)
+    br/
+    input.btn.alt(type="submit", value="Sign Up")
+    .auth-footer
+      .btn(v-href="/login") Have an Account?
+        span Sign In

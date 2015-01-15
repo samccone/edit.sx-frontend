@@ -1,0 +1,82 @@
+.edit-tile
+  display: inline-block
+  width: 31%
+  margin: 1%
+  border: solid 1px $border
+  height: 250px
+  position: relative
+  cursor: pointer
+  border-radius: $radius
+  overflow: hidden
+  background: #FFF
+
+  hoverable()
+
+  @media screen and (max-width: 680px)
+    width: 48%
+
+  @media screen and (max-width: 500px)
+    width: 100%
+    margin: 1% 0
+
+.image-count
+  color: #969696
+  font-weight: normal
+
+.edit-tile-image
+  position: relative
+  background-repeat: no-repeat
+  background-size: cover
+  width: 50%
+  height: 50%
+
+.edit-tile-images
+  position: absolute
+  top: 5%
+  left: 5%
+  width: 90%
+  height: 90%
+  background-color: $dark
+
+  &.half:before
+    line-height: 300px
+
+  &:before
+    content: "+"
+    color: darken($dark, 20%)
+    position: absolute
+    top: 0
+    font-size: 60px
+    height: 100%
+    width: 100%
+    left: 0
+    text-align: center
+    line-height: 220px
+
+
+.title-bar, .edit-stats
+  font-size: 13px
+  font-weight: 600
+  line-height: 16px
+  position: relative
+  background: $grey
+  color: $font_color
+  z-index: 3
+  height: 36px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  text-align: left
+  width: 90%
+  left: 5%
+  padding: $spacer 0
+
+.title-bar
+  font-size: 15px
+  font-weight: 700
+
+.edit-stats
+  position: absolute
+  bottom: 0
+  width: 90%
+  left: 5

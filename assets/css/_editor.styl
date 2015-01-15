@@ -1,0 +1,40 @@
+@import "_single_image"
+@import "_revisions"
+@import "_name_entry"
+
+.empty-uploads
+  position: absolute
+  padding: 100px
+  width: 510px
+  top: 20%
+  left: 50%
+  margin-left: -140px
+  border: dashed 3px $dark
+  font-size: 24px
+  text-align: center
+  line-height: 30px
+
+input.title
+  border: solid 1px $border
+  color: $font_color
+  padding: 5px
+  margin: 10px 0
+  background: transparent
+  width: 100%
+  outline: none
+  &:focus
+    border-color: darken($border, 70%)
+
+.images
+  width: 100%
+
+  ul
+    padding-bottom: $headerHeight
+
+.admin-edit
+  .images
+    padding: 0 $spacer 0 $edit_list_width + $spacer
+    transition: padding 250ms
+
+.hidden-edit-list.admin-edit .images
+  padding-left: $spacer + 20

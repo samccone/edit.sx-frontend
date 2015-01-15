@@ -1,0 +1,571 @@
+/* global styles */
+
+global-reset()
+
+@import "_variables"
+@import "_base"
+
+html
+  font-weight: 400
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 1.125em
+  line-height: 1.38em
+
+body
+  background-color:rgb(255, 255, 255)
+  color:rgb(85, 86, 103)
+  font-family: 'Source Sans Pro', sans-serif
+  @media(max-width: 860px)
+    font-size:1.125em
+
+._container
+  width:100%
+
+._text
+  position:absolute
+  top:-10px
+  left:0
+  right:0
+  z-index:20
+  width:391px
+  min-height:40px
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: 300
+  margin:0 auto
+  font-size:1.778em
+  line-height:0.35
+  text-align:center
+  color:rgb(46, 47, 58)
+
+._button
+  font-family: 'Source Sans Pro', sans-serif
+  display:block
+  border-bottom-right-radius:3px
+  line-height:1.38
+  text-align:center
+  resize:none
+
+._input
+  display:block
+  float:left
+  width:62.7204030226%
+  height:58px
+  padding:0 10px 0 20px
+  border-top-left-radius:3px
+  border-bottom-left-radius:3px
+  background-color:rgb(255, 255, 255)
+  font-size:1.167em
+  line-height:1.38
+  font-family: 'Source Sans Pro', sans-serif
+
+::-webkit-input-placeholder
+  color:rgb(161, 163, 176)
+:-moz-placeholder
+  color:rgb(161, 163, 176)
+::-moz-placeholder
+  color:rgb(161, 163, 176)
+:-ms-input-placeholder
+  color:rgb(161, 163, 176)
+
+label
+  position:absolute;
+  top:-9999px;
+
+/* header styles */
+
+.sign-in ._button
+  float:right
+  width:120px
+  line-height: 30px
+  height:35px
+  margin-right:3.25%
+  border-bottom-left-radius:3px
+  background-color:rgb(161, 163, 176)
+  font-size:0.889em
+  font-weight:400
+  color:rgb(0, 0, 0)
+  @media(max-width: 490px)
+    float:center
+    margin: 0 auto
+
+.sign-in ._button:hover
+  background-color:rgb(140, 143, 159)
+
+.sign-in
+  margin-top:9px
+
+.edit-logo
+  display:block
+  width:145px
+  height:auto
+  margin: 0 auto
+  overflow:hidden
+  @media(max-width: 490px)
+    width:100px
+    height:auto
+
+.article-titles
+  position: absolute
+  top: 50px
+  left: 0
+  right: 0
+  z-index: 30
+  width: 100%
+  margin: 0 auto
+  @media(max-width: 860px)
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 490px)
+    top:70px
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+
+.title
+  width:950px
+  font-family: 'Source Sans Pro', sans-serif
+  // font-weight: 300
+  min-height:35px
+  margin:3px auto 0
+  font-size:2.111em
+  line-height:1.35
+  text-align:center
+  color:rgb(255, 255, 255)
+  @media(max-width: 1180px)
+    width:550px
+  @media(max-width: 960px)
+    min-height:75px
+  @media(max-width: 860px)
+    width:574px
+  @media(max-width: 770px)
+    width:500px
+    font-size:1.778em
+  @media(max-width: 490px)
+    width:79.3522267206%
+    min-height:50px
+    font-size:1.333em
+
+.button-video
+  position:absolute
+  top:0
+  bottom:0
+  left:0
+  right:0
+  z-index:25
+  width:200px
+  height:68px
+  margin:auto
+  @media(max-width: 490px)
+    top: 100px
+
+.play-icon
+  position:relative
+  z-index:24
+  height:auto
+  display:block
+  position:relative
+  float:left
+  z-index:24
+  width:30px
+  height:auto
+  margin:19px 0 0 13%
+  overflow:hidden
+
+.button-video ._button
+  position:absolute
+  top:0
+  left:0
+  right:0
+  z-index:23
+  width:200px
+  height:68px
+  margin:0 auto
+  border-top-left-radius:3px
+  border-top-right-radius:3px
+  border-bottom-left-radius:3px
+  background-color:rgb(91, 162, 222)
+  font-size:1.167em
+  font-weight:400
+  color:rgb(255, 255, 255)
+  opacity:0.9
+  @media(max-width: 860px)
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+
+.button-video ._button:hover
+  background-color:rgb(74, 150, 213)
+
+._container-1
+  position:absolute
+  top:-9px
+  left:0
+  z-index:33
+  background-image:url('../imgs/background-flat.jpg')
+  background-repeat:no-repeat
+  background-size:cover
+  background-position:center top
+
+video-snaps()
+  @media(min-width: 1180px)
+    margin-top: 360px
+  @media(max-width: 860px)
+    height:390px
+    margin-top: 500px
+  @media(max-width: 770px)
+    height:375px
+    margin-top: 390px
+  @media(max-width: 660px)
+    margin-top: 340px
+  @media(max-width: 490px)
+    height:220px
+    margin-top: 400px
+  @media(max-width: 410px)
+    margin-top: 370px
+
+.video
+  position:relative
+  float:left
+  clear:both
+  width:100%
+  height:499px
+  margin-top:400px
+  video-snaps()
+
+.video .container
+  position:absolute
+  bottom:0
+  left:0
+  right:0
+  z-index:26
+  height:499px
+  margin:0 auto
+  @media(max-width: 980px)
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 860px)
+    bottom:-17px
+    left:0
+    right:0
+    height:375px
+    margin-right:auto
+    margin-left:auto
+
+.video-still, .video-player
+  display:block
+  position:absolute
+  bottom:0
+  left:0
+  right:0
+  z-index:22
+  width:800px
+  height:auto
+  margin:0 auto
+  overflow:hidden
+  @media(max-width: 860px)
+    width: 80%
+    bottom:17px
+    left:0
+    right:0
+    height:auto
+    margin-right:auto
+    margin-left:auto
+
+.video-player
+  height: 100%
+  display: none
+  z-index: -1
+  @media(max-width: 580px)
+    height: 350px
+
+  @media(max-width: 500px)
+    height: 250px
+
+/* new feature styles */
+
+.feature-area
+  // position:relative
+  width:100%
+  height:278px
+  margin:950px auto 0
+  font-family: 'Source Sans Pro', sans-serif
+  @media(max-width: 1180px)
+    margin-top:1000px
+  @media(max-width: 980px)
+    height:340px
+  @media(max-width: 860px)
+    margin: 990px auto 0
+  @media(max-width: 770px)
+    margin:870px auto 0
+    height:340px
+  @media(max-width: 660px)
+    margin:820px auto 0
+  @media(max-width: 490px)
+    margin:720px auto 0
+  @media(max-width: 410px)
+    margin:680px auto 0
+
+.features
+  position:relative
+  z-index:14
+  width:979px
+  height:278px
+  margin:0 auto
+  @media(max-width: 980px)
+    position:relative
+    z-index:14
+    width:90%
+  @media(max-width: 440px)
+    margin-top: 20px
+
+.feature
+  float:left
+  width:250px
+  height:200px
+  margin-top:78px
+  padding:1px
+  @media(max-width: 980px)
+    width:28%
+    padding:10px
+  @media(max-width: 740px)
+    float: none
+    width:80%
+    height:120px
+
+.feature-body
+  float:left
+  clear:both
+  width:100%
+  min-height:80px
+  margin-top:-5px
+  font-size:1em
+  line-height:1.38
+  text-align:center
+  color:rgb(85, 86, 103)
+  @media(max-width: 980px)
+    float:none
+    clear:none
+    margin-left:auto
+    margin-right:auto
+  @media(max-width: 400px)
+    width:99.9999999999%
+
+.feature-icon
+  display:block
+  float:left
+  width:70px
+  height:auto
+  margin-left:35.8870967741%
+  overflow:hidden
+  @media(max-width: 980px)
+    float:none
+    margin-left: auto
+    margin-right: auto
+    height:auto
+  // @media(max-width: 740px)
+  //   height:auto
+  // @media(max-width: 400px)
+  //   height:auto
+  // @media(max-width: 320px)
+  //   height:auto
+
+.feature-subhead
+  float:left
+  clear:both
+  width:100%
+  min-height:45px
+  margin-top:20px
+  padding-bottom:10px
+  font-size:1.333em
+  font-weight:400
+  line-height:1.38
+  text-align:center
+  color:rgb(46, 47, 58)
+  font-weight: 400
+  @media(max-width: 980px)
+    float:none
+    clear:none
+    margin-left:auto
+    margin-right:auto
+  @media(max-width: 400px)
+    width:99.9999999999%
+
+.feature-title
+  position:absolute
+  left:0
+  right:0
+  z-index:15
+  width:459px
+  min-height:40px
+  margin:0 auto
+  font-size:1.778em
+  line-height:0.35
+  text-align:center
+  color:rgb(46, 47, 58)
+  font-weight: 300
+  @media(max-width: 980px)
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 740px)
+    left:0
+    right:0
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 440px)
+    left:0
+    right:0
+    width:300px
+    margin-right:auto
+    margin-left:auto
+    line-height:1.25
+
+
+.create
+  margin-left:3.8815117466%
+  @media(max-width: 740px)
+    // position:absolute
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 400px)
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 320px)
+    top:88px
+    margin-right:auto
+    margin-left:auto
+
+
+.share
+  margin-left:3.7793667007%
+  @media(max-width: 740px)
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 400px)
+    margin-right:auto
+    margin-left:auto
+  @media(max-width: 320px)
+    top:316px
+    margin-right:auto
+    margin-left:auto
+
+.feedback
+  margin-left:0.9193054136%
+  @media(max-width: 740px)
+    margin-right: auto
+    margin-left: auto
+  @media(max-width: 320px)
+    margin-top:574px
+
+.next
+  display:block
+  float:left
+  width:30px
+  height:auto
+  margin:158px 0 0 2.4514811031%
+  overflow:hidden
+  @media(max-width: 980px)
+    height:auto
+    opacity:0
+  @media(max-width: 740px)
+    height:auto
+  @media(max-width: 400px)
+    height:auto
+  @media(max-width: 320px)
+    height:auto
+
+.next-1
+  @media(max-width: 980px)
+    margin-left:-2.0851048753%
+
+.next-2
+  @media(max-width: 980px)
+    margin-top:248px
+    margin-left:-0.9513180273%
+
+
+/* footer styles */
+
+.footer
+  width:66.1666666666%
+  min-height:40px
+  margin:60px auto 0
+  font-size:1.778em
+  font-weight:400
+  line-height:1.35
+  text-align:center
+  color:rgb(255, 255, 255)
+  font-family: 'Source Sans Pro', sans-serif
+  @media(max-width: 980px)
+    width:79.7959183673%
+    height:51%
+    margin-top:39px
+  @media(max-width: 860px)
+    height:56%
+  @media(max-width: 490px)
+    height:44%
+    font-size:1.556em
+  @media(max-width: 410px)
+    width:80.243902439%
+
+._container-2
+  float:left
+  height:281px
+  margin-top:40px
+  background-color:rgba(78, 169, 244, 0.86)
+  @media(max-width: 490px)
+    height:360px
+
+.sign-up, .sign-up-top
+  width: 800px
+  height:68px
+  margin:52px auto 0 auto
+  @media(max-width: 980px)
+    width:66.0204081632%
+
+.sign-up
+  @media(max-width: 980px)
+    margin-top:-65px
+
+.sign-up-top
+  height:48px
+  @media(max-width: 980px)
+    margin-top: 52px
+  @media(max-width: 490px)
+    margin-top: 30px
+
+.sign-up ._button, .sign-up-top ._button
+  float:right
+  clear:both
+  width:38.2871536523%
+  height:58px
+  margin-top:-58px
+  border-top-right-radius:3px
+  background-color:rgb(253, 105, 96)
+  font-size:1.167em
+  font-weight:400
+  color:rgb(255, 255, 255)
+
+.sign-up ._button:hover, .sign-up-top ._button:hover
+  background-color:rgb(232, 90, 81)
+
+.sign-up ._button, .sign-up-top ._button
+  @media(max-width: 490px)
+    width:100%
+    margin-top:22px
+    border-top-left-radius:3px
+    border-bottom-left-radius:3px
+
+.sign-up ._input, .sign-up-top ._input
+  @media(max-width: 490px)
+    width:100%
+    border-top-right-radius:3px
+    border-bottom-right-radius:3px
+

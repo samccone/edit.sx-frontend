@@ -1,0 +1,17 @@
+h2 Account settings
+form.ui-form
+  label(for="username") Email
+  br
+  input#username(value=username, name="username", type="email")
+  br
+  label(for="name") Your Name
+  br
+  input#name(value=name, name="name", type="text", placeholder="Enter Your Name")
+  br
+  - if (notifications)
+    input#notifications(name="notifications", type="checkbox", checked="checked")
+  - else
+    input#notifications(name="notifications", type="checkbox")
+  label(for="notifications") Get Edit Notifications
+  br
+  input.btn.submit(type="submit", value="Update Settings")

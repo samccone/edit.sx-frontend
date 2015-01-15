@@ -1,0 +1,49 @@
+h2.title
+  display: inline-block
+  position: absolute
+  width: 100%
+  left: 0
+  top: 2px
+  text-align: center
+  z-index: 0
+
+.btn.help
+  margin-top: 10px
+
+.save-edit, .original-edit, .back, .btn.help
+  z-index: 1
+  position: relative
+
+.public-edit
+  @media screen and (max-width: 550px)
+    .footer
+      display: none
+
+    .images ul
+      font-size: 0
+      padding-bottom: 0
+
+    .single-image
+      width: 50%
+      margin: 0
+      background: transparent
+      border-radius: 0
+      overflow: hidden
+
+      &.active
+        .image
+          transform: scale3d(1.1,1.1,1);
+
+      &.ui-sortable-helper
+        box-shadow: 0px 0px 20px #000
+        transform: rotate(6deg)
+
+      .image
+        width: 100%
+        height: 100%
+        margin: 0
+        background-size: cover
+        transition: all 300ms
+
+    .back.original, .dashboard, .ratings
+      display: none

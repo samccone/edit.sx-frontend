@@ -1,0 +1,81 @@
+.footer
+  background: $grey
+  position: fixed
+  z-index: $headerIndex
+  bottom: 0
+  width: 100%
+  height: 35px
+  border-top: solid 1px $border
+
+.tag-line
+  font-size: 11px
+  left: 50%
+  position: absolute
+  margin-left: -46px
+  top: 12px
+  color: $font_color
+
+.scalar
+  background: $border
+  width: 240px
+  height: 10px
+  position: relative
+  top: 12px
+  left: 10px
+  border-radius: 3px
+
+.ui-slider-handle
+  width: 17px
+  height: 17px
+  border-radius: 50%
+  display: block
+  position: relative
+  background: #ADADAD
+  top: -4px
+  transform: translateX(-9px)
+
+.filter-container
+  position: absolute
+  right: 10px
+  top: 10px
+
+.footer
+  .color-rating-hold.expanded .color-ratings
+    opacity: 1
+    transform: scale3d(1, 1, 1) rotateZ(180deg)
+
+  .color-hold
+    position: absolute
+    right: 140px
+    top: 11px
+    height: 15px
+    width: 15px
+
+    .color-ratings
+      opacity: 0
+      transform: scale3d(0, 0, 0) rotateZ(180deg)
+      top: -4px
+      left: -8px
+
+
+
+.filter
+  margin:     0 9px
+  cursor:     pointer
+  display:    inline-block
+  position:   relative
+  width: 30px
+  height: 13px
+
+  opacity(0.5)
+
+  &:hover
+    opacity(0.7)
+
+  &.active
+    opacity(1)
+
+.filters .dot
+  width: 15px
+  height: 15px
+  border-width: 2px

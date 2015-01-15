@@ -1,0 +1,56 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400")
+
+html
+  background: #f1f3f5
+  font-family: 'Source Sans Pro', sans-serif
+  -webkit-font-smoothing: antialiased;
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: $font_color
+
+*[v-href]
+  cursor: pointer
+
+input
+  border: solid 1px $dark
+  padding: $spacer * 0.5 $spacer
+  background: transparent
+  -webkit-font-smoothing: antialiased
+
+*::-webkit-input-placeholder
+  color: #000
+
+*:-moz-placeholder
+  color: #000
+
+*::-moz-placeholder
+  color: #000
+
+*:-ms-input-placeholder
+  color: #000
+
+b, h1, h2, h3, h4, h5
+  font-weight: 700
+
+.right
+  float: right
+
+.left
+  float: left
+
+.cl
+  clear: both
+
+.container
+  margin:   $spacer 0
+  padding:  0 $spacer
+
+hoverable()
+  &:hover
+    box-shadow: 0px 0px 4px #CCC
+
+  &:active
+    box-shadow: 0px 0px 6px #CCC

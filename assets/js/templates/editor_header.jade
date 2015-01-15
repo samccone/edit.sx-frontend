@@ -1,0 +1,8 @@
+.btn-group
+  - if (owned)
+    a.btn.back.dashboard(href="/dashboard") Dashboard
+    a.btn.back.original(href="/edit/#{objectId}") Admin Editor
+  .btn.save-edit.disabled Save Edit
+  .right.btn.help Help?
+h2.title= title
+.owner-input-container

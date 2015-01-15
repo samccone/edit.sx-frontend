@@ -1,0 +1,125 @@
+.help-modal *
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+  i
+    margin: 20px 0
+    font-size: 80px
+
+    &.overlap
+      position: relative
+      left: -30px
+      font-size: 60px
+      transform: rotate(10deg)
+      -webkit-transform: rotate(10deg)
+      margin-left: 0
+      margin-right: -30px
+
+.screen .overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: $headerIndex+1
+  background: rgba(56, 52, 66, 0.9)
+
+.help-modal .next.btn
+  position: absolute
+  bottom: 3.5%
+  left: 51%
+  background: $blue
+  padding: 11px 40px
+  margin-left: -53.5px
+  color: #fff
+  border: 0
+
+.help-slides
+  min-width: 500px
+  text-align: left
+  margin: 0 auto
+
+.help-slide
+  position: absolute
+  height: 73%
+  width: 75%
+  background: #ffffff
+  left: 0%
+  top: -100%
+  text-align: center
+  color: #54555e
+  border-radius: 4px
+  padding: 4px
+  text-align: center
+  border: solid 1px $border
+
+  .headline
+    font-size: 35px
+
+  .description
+    font-size: 17px
+    line-height: 22px
+    margin-top: 20px
+    width: 90%
+    display: inline-block
+
+  &.active, &.prev, &.next
+    top: 2.5%
+
+  &.active
+    left: 13%
+
+  &.prev
+    left: -67%
+
+  &.next
+    left: 93%
+
+  &.prev, &.next
+    cursor: pointer
+
+.editor-help
+  z-index: $headerIndex+1
+  position: absolute
+  text-align: center
+  background: #f5f5f7
+  border-radius: 5px
+  border: 2px solid $dark
+  padding: 25px
+  top: 50%
+  left: 50%
+  margin-top: -205px
+  margin-left: -235px
+  overflow: hidden
+  width: 470px
+  height: 370px
+
+  .close
+    border: solid 2px #FFF
+    color: #FFF
+    line-height: 35px
+    opacity: 1
+
+.slide-progress-indicator
+  bottom:   16%
+  position: absolute
+  width: 100%
+  left: 0
+  text-align: center
+
+  .orb
+    background: #ffffff;
+    display: inline-block;
+    height: 14px
+    width: 14px
+    border-radius: 50%
+    margin: 0 5px
+    border: solid 1px #cfd0d2
+    cursor: pointer
+
+    &.active
+      background: #cfd0d2

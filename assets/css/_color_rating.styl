@@ -1,0 +1,69 @@
+
+.current-rating
+  cursor: pointer
+  border-radius: 50%
+  border: solid 2px $border
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+.color-rating-hold.expanded
+  .color-ratings
+    transform: scale3d(1,1,1)
+
+.color-ratings
+  transform-origin: 50% 0
+  transform: scale3d(0,0,0)
+  transition: all 200ms
+  padding: 4px 15px
+  background: #f4f6f8
+  border: solid 1px $border
+  position: relative
+  top: 17px
+  left: -9px
+  border-radius: 3px
+  height: 158px
+
+  li
+    display: inline-block
+    height: 15px
+    width: 15px
+    left: -7px
+    position: relative
+    margin: 4px 0
+    border-radius: 50%
+    cursor: pointer
+    transition: all 100ms
+
+    &:hover
+      transform: scale3d(1.2,1.2,1)
+
+[data-color-id="-1"]
+  border: solid 1px $border
+  color: darken($border, 10%)
+  font-size: 10px
+  text-align: center
+  line-height: 13px
+  text-indent: -0.5px
+
+[data-color-id="0"]
+  background: #ef6965
+  border: solid 1px darken(#ef6965, 25%)
+
+[data-color-id="1"]
+  background: #fae83d
+  border: solid 1px darken(#fae83d, 25%)
+
+[data-color-id="2"]
+  background: #7fc14a
+  border: solid 1px darken(#7fc14a, 25%)
+
+[data-color-id="3"]
+  background: #5eb5e3
+  border: solid 1px darken(#5eb5e3, 25%)
+
+[data-color-id="4"]
+  background: #d2d3d6
+  border: solid 1px darken(#d2d3d6, 25%)

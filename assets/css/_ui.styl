@@ -1,0 +1,54 @@
+.btn-group .btn
+  margin-right: $spacer
+
+  &.right, &.left
+    margin-top: 8px
+
+.btn
+  display: inline-block
+  border-radius $radius
+  font-weight: 700
+  font-size: 13px
+  line-height: 13px
+  cursor: pointer
+  color: $orange
+  padding: 9px 12px
+  transition: all 200ms;
+  border: solid 1px $orange
+  outline: none
+  -webkit-appearance: none
+
+  &.large
+    font-size: 16px
+    height: auto
+    width: auto
+    padding: 14px 15px
+  &.disabled
+    opacity: 0.5
+    cursor: none
+    pointer-events: none
+
+  &.alt
+    color:      #FFF
+    border:     none
+    background: $blue
+
+
+@keyframes bounceIn
+  0% {
+    opacity: 0
+    transform: scale(.3)
+  }
+
+  50% {
+    transform: scale(1.05)
+  }
+
+  70% {
+    transform: scale(.9)
+  }
+
+  100% {
+    opacity: 1
+    transform: scale(1)
+  }

@@ -1,0 +1,61 @@
+$name_width = 470px
+
+.user-headline
+  font-size: 37px
+  margin: 40px 0 20px
+  color $grey
+
+.sub-headline
+  color: $grey
+  font-size: 22px
+
+  i
+    color: lighten($blue, 20%)
+    margin-left: 1ex
+
+.editor-name
+  margin-top: 40px
+  font-size: 21px
+  color: #686868
+  outline: none
+  padding: 12px 15px
+  border-radius: 3px
+
+  width: $name_width;
+  background: #FFF;
+
+  placeholdeColor(#aaacbc)
+
+.owner-input
+  position: fixed
+  top: $headerHeight
+  left: 0
+  width: 100%
+  height: 100%
+
+  .centered-content
+    width: $name_width
+    margin: 0 auto
+    text-align: center
+
+  .btn
+    padding: 25px
+    height: auto
+    width: 100%
+    line-height: 0px
+    margin-top: 20px
+    font-weight: 500
+    font-size: 20px
+
+  @media screen and (max-width: 550px)
+    input
+      float: none
+      display: inline-block
+
+    .btn
+      float: none
+      display: block
+      width: auto
+
+    .centered-content
+      width: 100%
